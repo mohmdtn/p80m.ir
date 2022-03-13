@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'IRANsans';
+    src: url('fonts/IRANSansWeb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'IRANsansBold';
+    src: url('fonts/IRANYekanMobileExtraBold.ttf') format('truetype');
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+    text-align: right;
+    font-family: "IRANsans";
+}
+
+body{
+    background-color: var(--site-bg);
+}
+
+img{
+    max-width: 100%;
+}
+
+
+
+/* /////////////////////////// menu */
+
+.nav-item .nav-inner{
+    color: #000;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.nav-item .nav-inner:hover{
+    color: var(--site-blue);
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\ menu */
+
+
+
+
+
+
+
+
+
+/* /////////////////////////// puzzle */
+
+.puzzleWrapper{
+    position: relative;
+}
+
+.puzzleBgHolder{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+}
+
+.puzzleInner{
+    padding: 60px 0;
+    position: relative;
+}
+
+.puzzleInner h5{
+    background-image: url("images/iranMiniMap.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 0;
+}
+
+.searchBox{
+    display: inline-block;
+    position: absolute;
+    top: 80px;
+    right: 9%;
+}
+
+.searchBoxInner{
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background-color: #ffffff56;
+    overflow: hidden;
+    display: flex;
+}
+
+.searchBoxInner input{
+    border: none;
+    background-color: #ffffff00;
+    border-radius: 0;
+    text-align: center;
+}
+
+.searchBoxInner input:focus{
+    box-shadow: none;
+    border: none;
+    outline: none;
+    background-color: #ffffff00;
+}
+
+.searchBoxInner input::placeholder{
+    color: #ffffffa2;
+}
+
+.searchBoxInner div{
+    background-color: #fff;
+    font-size: 26px;
+    padding: 4px 20px;
+    margin: -2px;
+    color: #bababa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}
+
+.searchBoxInner div:hover{
+    color: #818181;
+    cursor: pointer;
+}
+
+.puzzleSliderWrapper{
+    overflow: hidden;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.swiper-slide{
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms linear;
+    transform: scale(0.7);
+
+    position: relative;
+}
+
+.slidePuzzleWrapper{
+    padding: 11px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+}
+
+.sliderPuzzle{
+    min-height: 169px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: inset 0px 2px 15px #00000029, inset 0px -2px 15px #00000029;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide.swiper-slide-prev{
+    transform: scale(.8);
+}
+.swiper-slide.swiper-slide-next{
+    transform: scale(.8);
+}
+.swiper-slide.swiper-slide-active {
+    transform: scale(1);
+}
+.swiper-slide.swiper-slide-active .slidePuzzleWrapper{
+    background-color: #CDAC89;
+}
+
+.dashedLineWrapper{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+
+.dashedLine{
+    border-bottom: 3px dashed #C4C4C4;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.buyPuzzle::before{
+    content: "";
+    border-left: 3px dashed #C4C4C4;
+    height: 100px;
+    position: absolute;
+    bottom: 91px;
+}
+
+.buyPuzzle a{
+    padding: 9px 14px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 13px #3535358a;
+    border: none;
+    transition: .4s;
+}
+
+.buyPuzzle a:hover{
+    background-color: var(--site-blue);
+    color: #fff;
+    box-shadow: 0px 10px 20px #353535c4;
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\ puzzle */

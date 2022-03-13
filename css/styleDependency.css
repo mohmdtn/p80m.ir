@@ -1,0 +1,17 @@
+/* ////////////////////// variables */
+
+:root{
+    --site-bg: #fdfdfd;
+    --site-blue: #4BB5B3;
+}
+
+/* ////////////////////// end of variables */
+
+
+/* ///////////////////// classes */
+
+.font-bold{
+    font-weight: bold;
+}
+
+/* ///////////////////// end of classes */

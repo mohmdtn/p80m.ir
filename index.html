@@ -1,22 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts/fontawsome-5.13.0/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="css/slick.css"> -->
     <link rel="stylesheet" href="css/styleDependency.css">
     <link rel="stylesheet" href="css/style.css">
     <title>صفحه اصلی</title>
 </head>
+
 <body>
 
+
+    <header>
+        <section class="menu">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+
+                    <div class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                        aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                    </div>
+
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
+                        <ul class="navbar-nav p-0">
+
+                            <li class="nav-item nav-link mx-4">
+                                <a class="nav-inner text-decoration-none" href="#">درباره ما</a>
+                            </li>
+
+                            <li class="nav-item nav-link mx-4">
+                                <a class="nav-inner text-decoration-none" href="#">استان ها</a>
+                            </li>
+
+                            <li class="nav-item nav-link mx-4">
+                                <a class="nav-inner text-decoration-none" href="#">خرید</a>
+                            </li>
+
+                            <li class="nav-item nav-link mx-4">
+                                <a class="nav-inner text-decoration-none" href="#">ارتباط با ما</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="headerPicture text-xl-center pt-5">
+                <img src="pictures/headerPic.png" alt="">
+                <div class="dashedCircle"></div>
+            </section>
+        </div>
+    </header>
+
+    <!------------------------- puzzle -->
+    <div class="container-fluid p-0">
+        <section class="puzzleWrapper">
+            <div class="puzzleBgHolder w-100"><img class="w-100 h-100" src="pictures/puzzleBg.svg" alt=""></div>
+
+            <section class="puzzleInner">
+                <h5 class="text-white text-center mb-0 font-bold">تیکه های پازل</h5>
+                <div class="searchBox">
+                    <div class="searchBoxInner">
+                        <div>
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <input type="search" class="form-control text-white" placeholder="نام استان" name="" id="">
+                    </div>
+                </div>
+
+                <section class="puzzleSliderWrapper py-4">
+                    <div class="swiper mySwiper position-relative">
+                        <div class="dashedLineWrapper"><div class="dashedLine"></div></div>
+                        <div class="swiper-wrapper">
     
+                            <div class="swiper-slide">
+                                <div class="slideInner">
+                                    <div class="slidePuzzleWrapper">
+                                        <div class="sliderPuzzle">
+                                            <img src="pictures/puzzle/gilan.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
     
+                            <div class="swiper-slide">
+                                <div class="slideInner">
+                                    <div class="slidePuzzleWrapper">
+                                        <div class="sliderPuzzle">
+                                            <img src="pictures/puzzle/golestan.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <div class="slideInner">
+                                    <div class="slidePuzzleWrapper">
+                                        <div class="sliderPuzzle">
+                                            <img src="pictures/puzzle/mazandaran.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <div class="slideInner">
+                                    <div class="slidePuzzleWrapper">
+                                        <div class="sliderPuzzle">
+                                            <img src="pictures/puzzle/kerman.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <div class="slideInner">
+                                    <div class="slidePuzzleWrapper">
+                                        <div class="sliderPuzzle">
+                                            <img src="pictures/puzzle/shiraz.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <div class="slideInner">
+                                    <div class="slidePuzzleWrapper">
+                                        <div class="sliderPuzzle">
+                                            <img src="pictures/puzzle/tehran.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <div class="slideInner">
+                                    <div class="slidePuzzleWrapper">
+                                        <div class="sliderPuzzle">
+                                            <img src="pictures/puzzle/mazandaran.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="slideInner">
+                                    <div class="slidePuzzleWrapper">
+                                        <div class="sliderPuzzle">
+                                            <img src="pictures/puzzle/tehran.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="buyPuzzle position-relative py-5 d-flex justify-content-center align-items-center">
+                    <a href="" class="btn btn-light">خرید برای این استان</a>
+                </div>
+
+            </section>
+        </section>
+    </div>
+    <!------------------------- end of puzzle -->
+
+    <circle></circle>
+
 </body>
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
+<!-- <script src="js/slick.min.js"></script> -->
 <script src="js/script.js"></script>
+
 </html>
