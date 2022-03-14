@@ -128,20 +128,19 @@ img{
     margin: 0 auto;
 }
 
-.swiper-slide{
+.puzzleWrapper .swiper-slide{
     align-items: center;
     justify-content: center;
     transition: all 200ms linear;
     transform: scale(0.7);
-
     position: relative;
 }
 
-.slideInner{
+.puzzleWrapper .slideInner{
     padding: 0 18px;
 }
 
-.slidePuzzleWrapper{
+.puzzleWrapper .slidePuzzleWrapper{
     padding: 11px;
     background-color: #fff;
     border-radius: 50%;
@@ -152,7 +151,6 @@ img{
 
 .sliderPuzzle{
     min-height: 169px;
-    /* width: 170px; */
     border-radius: 50%;
     background-color: #fff;
     box-shadow: inset 0px 2px 15px #00000029, inset 0px -2px 15px #00000029;
@@ -170,13 +168,13 @@ img{
     text-shadow: 2px 2px 5px #575757, -2px -2px 5px #575757;
 }
 
-.swiper-slide.swiper-slide-prev{
+.puzzleWrapper .swiper-slide.swiper-slide-prev{
     transform: scale(.8);
 }
-.swiper-slide.swiper-slide-next{
+.puzzleWrapper .swiper-slide.swiper-slide-next{
     transform: scale(.8);
 }
-.swiper-slide.swiper-slide-active {
+.puzzleWrapper .swiper-slide.swiper-slide-active {
     transform: scale(1);
 }
 .swiper-slide.swiper-slide-active .slidePuzzleWrapper{
@@ -379,9 +377,10 @@ img{
 .shadow-cstm-up .shadowInset{
     width: 100%;
     position: relative;
-    height: 50px;
-    top: 0px;
+    height: 60px;
+    top: 9px;
     background-color: var(--site-bg);
+    border-radius: 26%;
 }
 
 .shadow-cstm-down{
@@ -394,9 +393,10 @@ img{
 .shadow-cstm-down .shadowInset{
     width: 100%;
     position: relative;
-    height: 50px;
-    bottom: -38px;
+    height: 60px;
+    bottom: -20px;
     background-color: var(--site-bg);
+    border-radius: 26%;
 }
 
 .registerInner h4{
@@ -411,7 +411,7 @@ img{
 }
 
 .numberRegister{
-    background-color: #fff;
+    background-color: #ffffff00;
     border: 1px solid var(--site-blue2);
     display: flex;
     justify-content: center;
@@ -455,3 +455,142 @@ img{
 }
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\ end of register */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /////////////////////////// top benefactors */
+
+.topBenefactorsInner h4{
+    background-image: url("images/benefactorBg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 0;
+}
+
+.benefactorsSliderWrapper{
+    overflow: hidden;
+    padding-top: 50px !important;
+}
+
+.benefactorsSliderWrapper .swiper-slide{
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms linear;
+    transform: scale(0.8);
+    position: relative;
+    text-align: center;
+}
+
+.benefactorsSliderWrapper .swiper-slide img{
+    padding: 4px;
+    border-radius: 50%;
+    background-color: var(--site-blue2);
+}
+
+/* .topBenefactorsInner .swiper-slide.swiper-slide-prev{
+    transform: scale(.8);
+} */
+/* .topBenefactorsInner .swiper-slide.swiper-slide-next{
+    transform: scale(.8);
+} */
+.topBenefactorsInner .swiper-slide.swiper-slide-active {
+    transform: scale(1);
+}
+
+.benefactorsSliderWrapper .swiper-slide .rankWrapper{
+    padding: 10px 0;
+    display: none;
+}
+
+.benefactorsSliderWrapper .swiper-slide .rank{
+    background-color: var(--site-blue);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefactorsSliderWrapper .swiper-slide h5{
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.benefactorsSliderWrapper .swiper-slide p{
+    font-size: 15px;
+    color: #3b3b3b;
+    display: none;
+}
+
+.benefactorsSliderWrapper .swiper-slide span{
+    height: 1px;
+    background-color: #000;
+    margin: 10px auto;
+    width: 60%;
+    display: block;
+    position: relative;
+    display: none;
+}
+
+.benefactorsSliderWrapper .swiper-slide span::before{
+    content: "";
+    background-color: #C27643;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    left: 47%;
+    top: -4px;
+    transform: rotate(45deg);
+}
+
+.topBenefactorsInner .swiper-slide.swiper-slide-active p{
+    display: block;
+}
+
+.topBenefactorsInner .swiper-slide.swiper-slide-active span{
+    display: block;
+}
+
+.topBenefactorsInner .swiper-slide.swiper-slide-active .rankWrapper{
+    display: block;
+}
+
+.yourPictureWrapper{
+    padding: 30px 0;
+    text-align: center;
+}
+
+.yourPictureWrapper a{
+    background-color: var(--site-blue);
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    box-shadow: 0px 7px 20px #3a909496;
+    transition: .3s;
+}
+
+.yourPictureWrapper a:hover{
+    transform: scale(.9);
+    color: #fff;
+    box-shadow: 0px 9px 20px #3a8f94d8;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\ end of top benefactors */

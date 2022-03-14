@@ -21,4 +21,14 @@
     padding: 0 10px;
 }
 
+.max-w-70{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.max-w-60{
+    max-width: 60%;
+    margin: 0 auto;
+}
+
 /* ///////////////////// end of classes */
