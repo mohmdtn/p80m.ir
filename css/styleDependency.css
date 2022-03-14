@@ -1,8 +1,9 @@
 /* ////////////////////// variables */
 
 :root{
-    --site-bg: #fdfdfd;
-    --site-blue: #4BB5B3;
+    --site-bg: #f5f5f5;
+    --site-blue: #3A9094;
+    --site-blue2: #4BB5B3;
 }
 
 /* ////////////////////// end of variables */
@@ -12,6 +13,12 @@
 
 .font-bold{
     font-weight: bold;
+}
+
+.container-cstm{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 /* ///////////////////// end of classes */
