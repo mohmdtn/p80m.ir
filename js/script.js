@@ -117,6 +117,7 @@ $(".searchBoxInner input").keydown(function (e) {
 
 function searchNames(){
     var name = $(".searchBoxInner input").val();
+
     const names = [
         "خوزستان",
         "بوشهر",
@@ -153,11 +154,108 @@ function searchNames(){
         "کهگیلویه بویراحمد",
     ];
 
-    var index = names.indexOf(name);
+    const names2 = [
+        "فارس",
+        "هرمزگان",
+        "سیستان و بلوچستان",
+        "تهران",
+        "مازندران",
+        "گیلان",
+        "گلستان",
+        "کرمان",
+        "شیراز",
+        "خراسان رضوی",
+        "خراسان شمالی",
+        "خراسان جنوبی",
+        "خوزستان",
+        "البرز",
+        "اردبیل",
+        "قزوین",
+        "زنجان",
+        "اذربایجان شرقی",
+        "اذربایجان غربی",
+        "کردستان",
+        "کرمانشاه",
+        "همدان",
+        "اراک",
+        "ایلام",
+        "لرستان",
+        "قم",
+        "سمنان",
+        "اصفهان",
+        "یزد",
+        "چهار محال بختیاری",
+        "کهگیلویه بویراحمد",
+        "خوزستان",
+        "بوشهر",
+    ];
+    
+    const names3 = [
+        "سیستان و بلوچستان",
+        "تهران",
+        "مازندران",
+        "گیلان",
+        "گلستان",
+        "کرمان",
+        "شیراز",
+        "خراسان رضوی",
+        "خراسان شمالی",
+        "خراسان جنوبی",
+        "خوزستان",
+        "البرز",
+        "اردبیل",
+        "قزوین",
+        "زنجان",
+        "اذربایجان شرقی",
+        "اذربایجان غربی",
+        "کردستان",
+        "کرمانشاه",
+        "همدان",
+        "اراک",
+        "ایلام",
+        "لرستان",
+        "قم",
+        "سمنان",
+        "اصفهان",
+        "یزد",
+        "چهار محال بختیاری",
+        "کهگیلویه بویراحمد",
+        "خوزستان",
+        "بوشهر",
+        "فارس",
+        "هرمزگان",
+    ];
+    
+    
+    // var index = names.indexOf(name);
+
+    if (swiper1.currentBreakpoint == 1440){
+        var index = names.indexOf(name);
+    }
+
+    if (swiper1.currentBreakpoint == 1024){
+        var index = names.indexOf(name);
+    }
+    
+    if (swiper1.currentBreakpoint == 768){
+        var index = names2.indexOf(name);
+    }
+
+    if (swiper1.currentBreakpoint == 640){
+        var index = names2.indexOf(name);
+    }
+
+    if (swiper1.currentBreakpoint == "max"){
+        var index = names3.indexOf(name);
+    }
+
 
     if (name != "") {
         if (index != -1) {
             swiper1.slideTo(index);
         }
     }
+
+    console.log(swiper1.currentBreakpoint);
+
 }
