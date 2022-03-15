@@ -1,20 +1,20 @@
 var swiper1 = new Swiper('.mySwiper', {
     navigation: {
-        nextEl: '.nextBtn',
-        prevEl: '.prvBtn',
+        nextEl: '.sliderRightBtn img',
+        prevEl: '.sliderLeftBtn img',
     },
-    slidesPerView: 1,
-    spaceBetween: 15,
+    // slidesPerView: 1,
+    // spaceBetween: 15,
     centeredSlides: true,
     roundLengths: true,
     loop: true,
     autoplay: {
-      delay: 20500,
-      disableOnInteraction: false,
+        delay: 20500,
+        disableOnInteraction: false,
     },
     breakpoints: {
         640: {
-            slidesPerView: 1,
+            slidesPerView: 3,
             spaceBetween: 15,
         },
         768: {
@@ -44,8 +44,8 @@ var swiper2 = new Swiper('.mySwiper2', {
     roundLengths: true,
     loop: true,
     autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
+        delay: 3500,
+        disableOnInteraction: false,
     },
     breakpoints: {
         640: {
@@ -68,43 +68,80 @@ var swiper2 = new Swiper('.mySwiper2', {
 });
 
 
+$(".slidePuzzleWrapper").mouseover(function () { 
+    var  elementHeight = $(this).find(".hoverPercentage").height();
+
+    if ( elementHeight < 30){
+        $(this).find("span").css("top", -20)
+    }
+    if ( elementHeight > 90){
+        $(this).find("span").css("top", 20)
+    }
+});
 
 
 
 
-$(".buyPuzzleBtn").click(function (e) { 
+
+
+$(".buyPuzzleBtn").click(function (e) {
     const ostan = $(".puzzleSliderWrapper .swiper .swiper-wrapper").find(".swiper-slide-active").find("p").html();
     console.log(ostan)
 });
 
-$(".searchBoxInner div").click(function (e) { 
-    var name = $(".searchBoxInner input").val();
-
-    // var slide = $(".puzzleSliderWrapper .swiper .swiper-wrapper").find(".swiper-slide-active").find("p").html(name)
-
-    if (name == "یزد"){
-        swiper1.slideTo(30, false, false);
-    }
-    else if (name == "خوزستان"){
-        swiper1.slideTo(0, false, false);
-    }
-    else if (name == "بوشهر"){
-        swiper1.slideTo(1, false, false);
-    }
-    else if (name == "فارس"){
-        swiper1.slideTo(2, false, false);
-    }
-    else if (name == "هرمزگان"){
-        swiper1.slideTo(3, false, false);
-    }
-    else if (name == "سیستان و بلوچستان"){
-        swiper1.slideTo(4, false, false);
-    }
-    else if (name == "تهران"){
-        swiper1.slideTo(5, false, false);
-    }
-
-    // swiper1.slideTo(5, false, false);
-
-
+$(".searchBoxInner div").click(function (e) {
+    searchNames()
 });
+
+$(".searchBoxInner input").keydown(function (e) {
+    if (e.keyCode == 13) {
+        searchNames()
+    }
+});
+
+function searchNames(){
+    var name = $(".searchBoxInner input").val();
+    const names = [
+        "خوزستان",
+        "بوشهر",
+        "فارس",
+        "هرمزگان",
+        "سیستان و بلوچستان",
+        "تهران",
+        "مازندران",
+        "گیلان",
+        "گلستان",
+        "کرمان",
+        "شیراز",
+        "خراسان رضوی",
+        "خراسان شمالی",
+        "خراسان جنوبی",
+        "خوزستان",
+        "البرز",
+        "اردبیل",
+        "قزوین",
+        "زنجان",
+        "اذربایجان شرقی",
+        "اذربایجان غربی",
+        "کردستان",
+        "کرمانشاه",
+        "همدان",
+        "اراک",
+        "ایلام",
+        "لرستان",
+        "قم",
+        "سمنان",
+        "اصفهان",
+        "یزد",
+        "چهار محال بختیاری",
+        "کهگیلویه بویراحمد",
+    ];
+
+    var index = names.indexOf(name);
+
+    if (name != "") {
+        if (index != -1) {
+            swiper1.slideTo(index);
+        }
+    }
+}
