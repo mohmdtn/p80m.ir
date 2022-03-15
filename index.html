@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/fonts/fontawsome-5.13.0/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <!-- <link rel="stylesheet" href="css/slick.css"> -->
     <link rel="stylesheet" href="css/styleDependency.css">
     <link rel="stylesheet" href="css/style.css">
     <title>صفحه اصلی</title>
@@ -18,40 +17,42 @@
 
 
     <header>
-        <section class="menu">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
-
-                    <div class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                        aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
-                    </div>
-
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
-                        <ul class="navbar-nav p-0">
-
-                            <li class="nav-item nav-link mx-4">
-                                <a class="nav-inner text-decoration-none" href="#">استان ها</a>
-                            </li>
-
-                            <li class="nav-item nav-link mx-4">
-                                <a class="nav-inner text-decoration-none" href="#">درباره ما</a>
-                            </li>
-
-                            <li class="nav-item nav-link mx-4">
-                                <a class="nav-inner text-decoration-none" href="#">خرید</a>
-                            </li>
-
-                            <li class="nav-item nav-link mx-4">
-                                <a class="nav-inner text-decoration-none" href="#">ارتباط با ما</a>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                </nav>
-            </div>
-        </section>
+        <div class="menuAfterScroll">
+            <section class="menu">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+    
+                        <div class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                        </div>
+    
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
+                            <ul class="navbar-nav p-0">
+    
+                                <li class="nav-item nav-link mx-4">
+                                    <a class="nav-inner text-decoration-none" href="#">استان ها</a>
+                                </li>
+    
+                                <li class="nav-item nav-link mx-4">
+                                    <a class="nav-inner text-decoration-none" href="#">درباره ما</a>
+                                </li>
+    
+                                <li class="nav-item nav-link mx-4">
+                                    <a class="nav-inner text-decoration-none" href="#">خرید</a>
+                                </li>
+    
+                                <li class="nav-item nav-link mx-4">
+                                    <a class="nav-inner text-decoration-none" href="#">ارتباط با ما</a>
+                                </li>
+    
+                            </ul>
+                        </div>
+    
+                    </nav>
+                </div>
+            </section>
+        </div>
 
         <div class="container">
             <section class="headerPicture text-xl-center pt-5">
@@ -514,12 +515,12 @@
         <section class="pieceWrapper py-5">
             <section class="pieceInner">
                 <h5 class="text-black text-center mb-0 font-bold">
-                    با شراکت در خرید هر قسمت <span class="position-relative"><span>از پازل</span> <img src="pictures/puzzlePiece.png" alt=""></span> <span class="conectLine">نان آور</span> یک خانواده ی <br>ایرانی باشید. 
+                    با شراکت در خرید هر قسمت <span class="position-relative"><span>از پازل</span> <img src="pictures/puzzlePiece.png" alt=""></span> <span class="conectLine">نان آور</span> یک خانواده ی ایرانی باشید. 
                 </h5>
 
                 <div class="row m-0">
 
-                    <section class="col-md-5 p-0">
+                    <section class="col-md-5 p-0 pb-5 pb-md-0">
                         <div class="pieceImageWrapper d-flex justify-content-center justify-content-md-end px-2">
                             <div class="iranMapWrapper position-relative">
                                 <img src="pictures/iranMap.svg" alt="">
@@ -549,8 +550,7 @@
                             </div>
                             <div class="putYourPuzzle pt-5 position-absolute">
                                 <div class="putYourPuzzleInner text-start">
-                                    <a href="" class="btn btn-light p-2">تیکه پازلتو بزار <img
-                                            src="pictures/arrowRight.svg"></a>
+                                    <a href="" class="btn btn-light p-2">تیکه پازلتو بزار <img src="pictures/arrowRight.svg"></a>
                                     <span></span>
                                 </div>
                             </div>
@@ -572,7 +572,7 @@
                 <div class="shadowInset"></div>
             </div>
 
-            <section class="registerInner px-5 py-4">
+            <section class="registerInner px-md-5 py-4">
                 <h4 class="text-black text-center mb-0 font-bold">عضویت</h4>
                 <div class="row p-0">
                     <div class="col-md-7">
@@ -724,6 +724,69 @@
         </section>
     </div>
     <!------------------------- end of top benefactors -->
+
+
+
+
+    <!------------------------- footer -->
+
+    <footer>
+        <div class="container-cstm">
+            <section class="footerInner">
+                <div class="row p-0">
+
+                    <div class="col-md-3 px-5 pb-3 pb-md-0">
+                        <div class="footerItem">
+                            <div class="footerItemInner text-center bg-white">
+                                <i class="fab fa-whatsapp"></i>
+                                <h6>شماره تماس</h6>
+                                <span></span>
+                                <p class="mb-1 mt-2">021-2344571</p>
+                                <p class="mb-1">021-2344571</p>
+                                <p class="mb-1">021-2344571</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 px-5 pb-3 pb-md-0">
+                        <div class="footerItem">
+                            <div class="footerItemInner text-center bg-white">
+                                <i class="far fa-envelope"></i>
+                                <h6>آدرس ایمیل</h6>
+                                <span></span>
+                                <p class="mt-4">p80m@yahoo.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 px-5 pb-3 pb-md-0">
+                        <div class="footerItem">
+                            <div class="footerItemInner text-center bg-white">
+                                <i class="fab fa-telegram-plane"></i>
+                                <h6>آیدی تلگرام</h6>
+                                <span></span>
+                                <p class="mt-4">@sample.p80m</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 px-5 pb-3 pb-md-0">
+                        <div class="footerItem">
+                            <div class="footerItemInner text-center bg-white">
+                                <i class="fab fa-instagram"></i>
+                                <h6>صفحه اینستاگرام </h6>
+                                <span></span>
+                                <p class="mt-4">@sample.p80m</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </footer>
+
+    <!------------------------- end of footer -->
 
 
 </body>

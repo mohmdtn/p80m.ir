@@ -1,3 +1,19 @@
+$(".navbar-toggler").click(function (e) { 
+    $(".collapse").slideToggle();
+});
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 190) {
+        $(".menu").addClass("fixMenu");
+    }
+    else {
+        $(".menu").removeClass("fixMenu");
+    }
+});
+
+
+
+
 var swiper1 = new Swiper('.mySwiper', {
     navigation: {
         nextEl: '.sliderRightBtn img',
