@@ -16,8 +16,8 @@ $(window).scroll(function () {
 
 var swiper1 = new Swiper('.mySwiper', {
     navigation: {
-        nextEl: '.sliderRightBtn img',
-        prevEl: '.sliderLeftBtn img',
+        nextEl: '.sliderLeftBtn img',
+        prevEl: '.sliderRightBtn img',
     },
     // slidesPerView: 1,
     // spaceBetween: 15,
@@ -25,7 +25,7 @@ var swiper1 = new Swiper('.mySwiper', {
     roundLengths: true,
     loop: true,
     autoplay: {
-        delay: 20500,
+        delay: 2500,
         disableOnInteraction: false,
     },
     breakpoints: {
@@ -259,3 +259,70 @@ function searchNames(){
     console.log(swiper1.currentBreakpoint);
 
 }
+
+
+
+
+
+
+// show phone code section
+$(".getCodeBtn").click(function (e) { 
+    $(".sendCodeWrapper").slideDown();
+});
+
+
+$("#imgInp").change(function (e) { 
+    const [file] = imgInp.files
+    if (file) {
+      blah.src = URL.createObjectURL(file)
+    }
+});
+
+
+// just numbers for numbers input
+$(".numberCheck").keypress(function (e) {
+    if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+      return false;
+   }
+});
+
+
+$(".plusNumber").click(function (e) { 
+    var inputValue = $("#breadNumber");
+    if(! $("#breadNumber").val() ){
+        inputValue = 0;
+    }
+    else{
+        inputValue = $("#breadNumber").val();
+    }
+
+    $("#breadNumber").val(parseInt(inputValue) + 1);
+});
+
+
+
+$(".minusNumber").click(function (e) { 
+    var inputValue = $("#breadNumber");
+    if(! $("#breadNumber").val() ){
+        inputValue = 0;
+    }
+    else{
+        inputValue = parseInt($("#breadNumber").val()) - 1;
+        if (inputValue < 0){
+            inputValue = 0;
+        }
+    }
+
+    $("#breadNumber").val(inputValue);
+});
+
+
+$(".buyBreadSection").click(function (e) { 
+    $(".buyBreadInner").slideDown();
+    $(".profileEditInner").slideUp();
+});
+
+$(".userInfpSection").click(function (e) { 
+    $(".buyBreadInner").slideUp();
+    $(".profileEditInner").slideDown();
+});
